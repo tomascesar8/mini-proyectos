@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link href="https://kit-pro.fontawesome.com/releases/v5.15.4/css/pro.min.css" rel="stylesheet">
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
+    <link rel="stylesheet" href="css/styles.css">
+    <title>Mix de aplicaciones</title>
+</head>
+<body>
+        <div class="container-apps container d-flex flex-column  justify-content-center pt-4 pt-md-5">
+            <!-- <h3 class="text-center text-light fw-bolder pb-3"><span class="title py-2 px-5 rounded-3">Mix de aplicaciones</span></h3> -->
+            <div class="description-web col-11 col-md-9">
+              <p class="mb-1">En esta página web he incluido algunos mini proyectos, realizados durante mis primeros pasos como desarrollador. </p>
+              <p>Si bien son simples, cada uno es una muestra de mi capacidad para resolver problemas y encontrar soluciones creativas en iniciativas de cualquier tamaño.</p>
+            </div>
+            <div class="radius col-11 col-sm-10 col-md-8 col-lg-6 m-auto mt-2">
+                <div class="w-100 d-flex flex-column accordion pb-5" id="accordionExample">
+                  <div class="first-child accordion-item fs-6 bg-secondary">
+                      <div class="d-flex justify-content-between">
+                        <h2 class="accordion-header w-100 text-light fw-bold fs-5" id="headingOne">
+                          <div class="link-app"><a href="/carrito2.0/index-carrito.html">Ecommerce</a></div>
+                        </h2>
+                        <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
+                        </button>
+                      </div>
+                      <!-- <span class="inner-btn"><i class="far fa-chevron-down"></i></span> -->
+                    <div id="collapseOne" class="accordion-collapse collapse" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+                      <div class="accordion-body">
+                        <p>Este proyecto es un ecommerce que cuenta con un sistema de login para los usuarios, un carrito de compras para agregar y quitar elementos, y una vista detallada para cada producto. </p>
+                        <p>Se utilizaron tecnologías web como HTML, CSS, Bootstrap y JavaScript. La información de la sesión de usuario y los productos agregados al carrito se almacenan en el LocalStorage del navegador.</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="accordion-item fs-6 bg-secondary">
+                      <div class="d-flex justify-content-between">
+                          <h2 class="accordion-header w-100 text-light fw-bold fs-5" id="headingTwo">
+                            <div class="link-app"><a href="/simpsons/index-simpsons.html">CRUD API Simpsons</a></div>
+                          </h2>
+                          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                          </button>
+                      </div>
+                    <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+                      <div class="accordion-body">
+                        <p>Esta página web cuenta con un sistema CRUD permite visualizar y añadir personajes de la famosa serie de televisión Los Simpson. </p>
+                        <p> Se utilizan tecnologías como HTML, CSS, Bootstrap y JavaScript, así como las funcionalidades básicas de Node.js necesarias para aplicar "npm json-server".</p>
+                        <p class="text-dark fw-bolder">ESTA APP SOLO FUNCIONA SI ANTES SE INICIA EN CONSOLA EL COMANDO json-server --watch "simpsons/db/db.json"</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="accordion-item fs-6 bg-secondary">
+                      <div class="d-flex justify-content-between">
+                          <h2 class="accordion-header w-100 text-light fw-bold fs-5" id="headingThree">
+                            <div class="link-app"><a href="/lista-tareas/index-tareas.html">Lista de tareas</a></div>
+                          </h2>
+                          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                          </button>
+                      </div>
+                    <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+                      <div class="accordion-body">
+                        <p>Crea una lista de tareas que permite agregar y eliminar tareas de forma dinámica en una página web.</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="accordion-item fs-6 bg-secondary">
+                      <div class="d-flex justify-content-between">
+                          <h2 class="accordion-header w-100 text-light fw-bold fs-5" id="headingFour">
+                            <div class="link-app"><a href="/mascota-en-corral/mascota.html">Vaca en corral</a></div>
+                          </h2>
+                          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                          </button>
+                      </div>
+                    <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour" data-bs-parent="#accordionExample">
+                      <div class="accordion-body">
+                        <p>Una vaquita que puede ser movida por el usuario utilizando las teclas de flechas. El movimiento se limita a un corral, delimitado por un rectángulo en la pantalla. <br>
+                          Se utiliza JavaScript para detectar el evento de pulsación de teclas, generando un cambio en las coordenadas de la vaca.</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="accordion-item fs-6 bg-secondary">
+                      <div class="d-flex justify-content-between">
+                          <h2 class="accordion-header w-100 text-light fw-bold fs-5" id="headingFive">
+                            <div class="link-app"><a href="/fecha-y-hora/index-fecha.html">Qué día es hoy?</a></div>
+                          </h2>
+                          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+                          </button>
+                      </div>
+                    <div id="collapseFive" class="accordion-collapse collapse" aria-labelledby="headingFive" data-bs-parent="#accordionExample">
+                      <div class="accordion-body">
+                        <p>Reloj que muestra la fecha actual, junto con las horas, minutos y segundos en un formato de 12 horas con AM o PM.</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="accordion-item fs-6 bg-secondary">
+                      <div class="d-flex justify-content-between">
+                          <h2 class="accordion-header w-100 text-light fw-bold fs-5" id="headingSix">
+                            <div class="link-app"><a href="/clon-google/index-clon-google.html">Clon de Google</a></div>
+                          </h2>
+                          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSix" aria-expanded="false" aria-controls="collapseSix">
+                          </button>
+                      </div>
+                    <div id="collapseSix" class="accordion-collapse collapse" aria-labelledby="headingSix" data-bs-parent="#accordionExample">
+                      <div class="accordion-body">
+                        <p class="mb-2">Réplica del buscador de Google en español</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="accordion-item fs-6 bg-secondary">
+                      <div class="d-flex justify-content-between">
+                          <h2 class="accordion-header w-100 text-light fw-bold fs-5" id="headingSeven">
+                            <div class="link-app"><a href="/cronometro/index-cronometro.html">Cronómetro</a></div>
+                          </h2>
+                          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSeven" aria-expanded="false" aria-controls="collapseSeven">
+                          </button>
+                      </div>
+                    <div id="collapseSeven" class="accordion-collapse collapse" aria-labelledby="headingSeven" data-bs-parent="#accordionExample">
+                      <div class="accordion-body">
+                        <p>Cronómetro con función para iniciar, pausar y detener el tiempo.</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="accordion-item fs-6 bg-secondary">
+                      <div class="d-flex justify-content-between">
+                          <h2 class="accordion-header w-100 text-light fw-bold fs-5" id="headingEight">
+                            <div class="link-app"><a href="/temporizador/temporizador.html">Temporizador</a></div>
+                          </h2>
+                          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseEight" aria-expanded="false" aria-controls="collapseEight">
+                          </button>
+                      </div>
+                    <div id="collapseEight" class="accordion-collapse collapse" aria-labelledby="headingEight" data-bs-parent="#accordionExample">
+                      <div class="accordion-body">
+                        <p>Temporizador que permite ingresar horas, minutos y segundos, y permite iniciar, pausar y detener la cuenta regresiva.</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="accordion-item fs-6 bg-secondary">
+                      <div class="d-flex justify-content-between">
+                          <h2 class="accordion-header w-100 text-light fw-bold fs-5" id="headingNine">
+                            <div class="link-app"><a href="/dados/index-dados.html">Tirar dado</a></div>
+                          </h2>
+                          <button class="btn-last-child accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseNine" aria-expanded="false" aria-controls="collapseNine">
+                          </button>
+                      </div>
+                    <div id="collapseNine" class="accordion-collapse collapse" aria-labelledby="headingNine" data-bs-parent="#accordionExample">
+                      <div class="accordion-body">
+                        <p class="mb-2">Simula el lanzamiento de un dado de seis caras.</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+            </div>
+        </div>
+
+   <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="/js/app.js" ></script>
+  </body>
+</html>
+
+
+    

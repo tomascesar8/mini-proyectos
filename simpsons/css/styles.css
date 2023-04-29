@@ -1,0 +1,34 @@
+
+body{
+    min-height: 100vh !important;
+}
+.index-body{
+    margin: 0;
+    padding: 0;
+    background-image: url(./../assets/img/living.jpeg);
+    height: 100vh;
+    background-size: cover;
+    background-position: 0% 28%;
+    background-repeat: no-repeat;
+}
+
+.characters-body{
+    margin: 0;
+    padding: 0;
+    background-image: url(./../assets/img/all-characters.jpg);
+    /* height: 100vh; */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;   
+}
+
+.background-modal{
+    margin: 0;
+    padding: 0;
+    background-image: url(./../assets/img/living-people.jpg);
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;  
+}
+

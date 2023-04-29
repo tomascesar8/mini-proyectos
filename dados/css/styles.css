@@ -1,0 +1,12 @@
+body{
+    background: url(/dados/assets/img/dados-vaso-transformed-transformed.jpeg); 
+    background-size: cover; 
+    background-position: 50% 15%;
+}
+#resultado .conteo {
+    background-color: rgba(255, 255, 255, .75) !important;
+}
+
+.containter{
+    /* width: 50% !important; */
+}
