@@ -1,0 +1,54 @@
+#index-body{
+    background-image: url(../assets/img/libreta-16.jpeg);
+    background-size: cover;
+    background-position: 50% 16%;
+}
+
+#login-container{
+    width: 19rem;
+    border-radius: 1rem;
+}
+
+.button-without-styles{
+    border: none;
+    background-color: transparent;
+}
+
+.container-fluid, #div-product-container{
+    background-image: url(../assets/img/libreta-16.jpeg);
+    background-size: cover;
+    background-position: 50% 16%;
+    /* background-color: #EBEBEB; */
+}
+#products-container{
+    margin: auto;
+    width: 90%;
+}
+.buttons-product {
+    background-color: transparent !important;
+    width: 290px;
+}
+.navbar, .body-product{
+    background-color: #FFF159;
+}
+.card-img-top{
+    height: 240px;
+    background-color: #FFF159 !important;
+}
+
+.card-title, .card-text, .btn{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#product-img{
+    min-width: 300px;
+    max-width: 500px;
+    min-height: 300px !important;
+    max-height: 400px;
+}
+
+.accordion-button{
+    border: none !important;
+}

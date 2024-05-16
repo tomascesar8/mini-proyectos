@@ -1,0 +1,56 @@
+
+body{
+    min-height: 100vh !important;
+}
+/* .index-body{
+    margin: 0;
+    padding: 0;
+    background-image: url(./../assets/img/living.jpeg);
+    height: 100vh;
+    background-size: cover;
+    background-position: 0% 28%;
+    background-repeat: no-repeat;
+} */
+
+.index-body {
+    margin: 0;
+    padding: 0;
+    position: relative;
+    height: 100vh;
+    background-image: url(./../assets/img/living.jpeg);
+    background-size: cover;
+    background-position: 0% 28%;
+    background-repeat: no-repeat;
+}
+
+.index-body::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    backdrop-filter: brightness(0.7); /* Ajusta el valor para cambiar la opacidad (0 completamente oscuro, 1 sin cambios) */
+    z-index: -1; /* Asegura que la capa de fondo esté detrás de otros elementos */
+}
+
+
+.characters-body{
+    margin: 0;
+    padding: 0;
+    background-image: url(./../assets/img/all-characters.jpg);
+    /* height: 100vh; */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;   
+}
+
+.background-modal{
+    margin: 0;
+    padding: 0;
+    background-image: url(./../assets/img/living-people.jpg);
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;  
+}

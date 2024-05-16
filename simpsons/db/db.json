@@ -1,0 +1,60 @@
+{
+  "characters": [
+    {
+      "id": 1,
+      "name": "Homero Simpson",
+      "age": 37,
+      "address": "Av. Siempreviva 742",
+      "image": "./assets/img/homero.PNG"
+    },
+    {
+      "id": 2,
+      "name": "Bart Simpson",
+      "age": 10,
+      "address": "Av. Siempreviva 742",
+      "image": "./assets/img/bart.PNG"
+    },
+    {
+      "id": 3,
+      "name": "Lisa Simpson",
+      "age": 8,
+      "address": "Av. Siempreviva 742",
+      "image": "./assets/img/lisa.PNG"
+    },
+    {
+      "id": 5,
+      "name": "Marge Simpson",
+      "age": 36,
+      "address": "Av Siempreviva 742",
+      "image": "./assets/img/marge.PNG"
+    },
+    {
+      "id": 6,
+      "name": "Maggie Simpson",
+      "age": 1,
+      "address": "Av Siempreviva 742",
+      "image": "./assets/img/maggie.PNG"
+    },
+    {
+      "name": "Ned Flanders",
+      "age": 59,
+      "address": "Av Siempreviva 744",
+      "image": "./assets/img/flanders.PNG",
+      "id": 7
+    },
+    {
+      "name": "Krusty",
+      "age": "52",
+      "address": "Wallstreet 925",
+      "image": "./assets/img/krusty.PNG",
+      "id": 8
+    },
+    {
+      "name": "Gif Homero",
+      "age": "38",
+      "address": "Av Siempreviva 742",
+      "image": "./assets/img/209492.gif",
+      "id": 9
+    }
+  ]
+}

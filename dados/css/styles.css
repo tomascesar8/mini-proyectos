@@ -1,0 +1,33 @@
+body{
+    background: url(/dados/assets/img/dados-vaso-transformed-transformed.jpeg); 
+    background-size: cover; 
+    background-position: 50% 15%;
+}
+#resultado .conteo {
+    background-color: rgba(255, 255, 255, .75) !important;
+}
+
+.containter{
+    /* width: 50% !important; */
+}
+
+@keyframes pulseAnimation {
+    0% {
+        transform: scale(1.05);
+    }
+    100% {
+        transform: scale(1.15);
+    }
+}
+
+.btn-tirar-dado{
+    background-color: rgb(191, 7, 7);
+    border: 3px solid rgb(33, 9, 9);
+
+}
+
+.btn-tirar-dado:hover{
+background-color: rgb(145, 6, 6);
+border: 3px solid rgb(26, 2, 2);
+animation: pulseAnimation 500ms infinite alternate ease-in-out;
+}
